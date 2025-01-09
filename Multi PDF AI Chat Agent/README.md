@@ -5,9 +5,6 @@ Meet MultiPDF Chat AI App! 🚀 Chat seamlessly with Multiple PDFs using Langcha
 ## 📝 Description
 The Multi-PDF's Chat Agent is a Streamlit-based web application designed to facilitate interactive conversations with a chatbot. The app allows users to upload multiple PDF documents, extract text information from them, and train a chatbot using this extracted content. Users can then engage in real-time conversations with the chatbot.
 
-## 📢Demo App with Streamlit Cloud (Visualize only)
-
-[Launch App On Streamlit](https://multi-pdfschatappai-agent.streamlit.app/)
 
 ## 💻 Demo:
 ![Demo 1: Chatbot Output](img/LLMframework.jpg)
@@ -73,7 +70,7 @@ Run the Streamlit app:
 ---
 ## 💡Usage
 
-To use the Multi-PDF-s 📚ChatApp AI Agent 🤖, U can have glimpse of look by clicking on this link : [Launch App On Streamlit](https://multi-pdfschatappai-agent.streamlit.app/). To run app, fork app and follow the below steps to start using it. Use the sidebar to upload PDF files and train the chatbot. Once trained, you can have conversations with the chatbot by entering questions in the text input field.
+
 
 In case You want to run & implement project on your system then follow these steps:
 
