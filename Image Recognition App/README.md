@@ -109,7 +109,7 @@ pip install flask torch torchvision pillow
 ## Screenshots
 
 ### Home Page
-![Example] (images/image_recognition_app.png)
+![Example](images/image_recognition_app.png)
 
 ### Prediction Result
 ![Prediction Result](https://via.placeholder.com/800x400?text=Prediction+Result)
