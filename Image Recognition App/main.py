@@ -61,4 +61,4 @@ def predict():
     return jsonify({"label": predicted_label, "image": base64_image})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
