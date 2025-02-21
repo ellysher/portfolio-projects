@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor MRI Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .upload-form {
+            margin-bottom: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e2e2e2;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor MRI Classification</h1>
+        <form class="upload-form" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload and Predict</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <h2>Result</h2>
+            <p><strong>Class:</strong> {{ result.class }}</p>
+            <p><strong>Confidence:</strong> {{ "%.2f"|format(result.confidence * 100) }}%</p>
+            <img src="{{ url_for('static', filename='uploads/' + result.filename) }}" alt="Uploaded Image" style="max-width:100%; height:auto;">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
